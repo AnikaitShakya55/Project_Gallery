@@ -1,0 +1,77 @@
+/* Contact.module.css */
+
+.contactContainer {
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 25vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contactContent {
+    width: 100%;
+    max-width: 600px;
+    margin: 10vh auto 0; 
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; 
+}
+
+.inputField:focus {
+    outline: none; 
+    border-color: greenyellow; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sendButton {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.sendButton:hover {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .contactContent {
+        padding: 15px; /* Increased padding for smaller screens */
+    }
+
+    .inputField {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    .sendButton {
+        width: 70%;
+        padding: 8px;
+    }
+}
