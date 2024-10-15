@@ -10,8 +10,8 @@ import javaIcon from "../Assests/js.png";
 import nextIcon from "../Assests/nextjs.png";
 import bootStrapIcon from "../Assests/bootStrap.png";
 import tailwindIcon from "../Assests/tailwind.png";
-import muiIcon from "../Assests/mui.png";
-import envIcon from "../Assests/dotenv.png";
+import muiIcon from "../Assests/muiLogo.png";
+import envIcon from "../Assests/envLogo.png";
 
 const AboutMe = () => {
   return (
