@@ -30,8 +30,11 @@ const videoData = [
 
 const ConceptsLearned = () => {
   return (
-    <div className="flex-col min-h-screen mx-40 mt-10">
-      <h1 className="text-2xl font-bold mb-4">Concepts Learned</h1>
+    <div className="flex-col min-h-screen mx-60 mt-20">
+      <h1 className="text-2xl font-bold mb-4">
+        {" "}
+        Tackling Complex Challenges in Company Projects"
+      </h1>
       <div className="flex flex-wrap gap-6">
         {videoData.map((video) => (
           <div
