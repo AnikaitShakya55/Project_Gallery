@@ -15,15 +15,15 @@ import envIcon from "../Assests/envLogo.png";
 
 const AboutMe = () => {
   return (
-    <div className=" flex-col  min-h-screen mx-40 mt-10">
+    <div className="flex-col min-h-screen mx-40 mt-10">
       <div className="text-center p-10 flex-col">
-        <h2 className="inline-block text-4xl font-rubik py-5 px-9 text-white bg-slate-500 bg-opacity-25 rounded-lg font-semibold md:py-5   ">
+        <h2 className="inline-block text-4xl font-rubik py-5 px-9 text-white bg-slate-500 bg-opacity-25 rounded-lg font-semibold md:py-5">
           ANIKAIT SHAKYA
         </h2>
 
-        <h3 className="text-lg font-bold  my-8  ">Front End Developer</h3>
+        <h3 className="text-lg font-bold my-8">Front End Developer</h3>
 
-        <p className="text-1xl text-white  font-source-code-pro ">
+        <p className="text-1xl text-white font-source-code-pro">
           Proficient React.js engineer with expertise in HTML, CSS, JavaScript,
           skilled at developing responsive web designs using Bootstrap and
           TailWind. Eager to contribute knowledge and experience to drive
@@ -32,24 +32,30 @@ const AboutMe = () => {
       </div>
 
       <div className="text-5xl flex justify-center gap-16 py-3">
-        <a href="https://github.com/AnikaitShakya55" target="_blank">
-          {" "}
-          <FaGithub className=" transition-transform duration-200 hover:scale-125" />
+        <a
+          href="https://github.com/AnikaitShakya55"
+          target="_blank"
+          rel="noopener noreferrer" 
+        >
+          <FaGithub className="transition-transform duration-200 hover:scale-125" />
         </a>
         <a
           href="https://www.linkedin.com/in/anikait-shakya-087790226/"
           target="_blank"
+          rel="noopener noreferrer" // Added rel attribute
         >
-          {" "}
-          <FaLinkedin className=" transition-transform duration-200 hover:scale-125" />
+          <FaLinkedin className="transition-transform duration-200 hover:scale-125" />
         </a>
-        <a href="https://www.instagram.com/imakshxar/" target="_blank">
-          {" "}
+        <a
+          href="https://www.instagram.com/imakshxar/"
+          target="_blank"
+          rel="noopener noreferrer" // Added rel attribute
+        >
           <RiInstagramFill className="transition-transform duration-200 hover:scale-125" />
         </a>
       </div>
 
-      <div className=" my-5 text-sm flex justify-center ">
+      <div className="my-5 text-sm flex justify-center">
         <img
           alt="my pic"
           src={myImg}
@@ -58,8 +64,8 @@ const AboutMe = () => {
       </div>
 
       <section className="lg:flex h-auto rounded-lg gap-20">
-        <div className='"text-center shadow-lg p-10  my-10  bg-slate-500 bg-opacity-25 rounded-xl flex-1"'>
-          <h1 className="text-3xl  font-extrabold">Education</h1>
+        <div className="text-center shadow-lg p-10 my-10 bg-slate-500 bg-opacity-25 rounded-xl flex-1">
+          <h1 className="text-3xl font-extrabold">Education</h1>
 
           <p className="text-1xl pt-3">
             Indian Institute of Technology and Management Jan 2019 - Dec 2022
@@ -71,7 +77,7 @@ const AboutMe = () => {
           </p>
         </div>
 
-        <div className="text-center shadow-lg p-10  my-10  bg-slate-500 bg-opacity-25 rounded-xl flex-1">
+        <div className="text-center shadow-lg p-10 my-10 bg-slate-500 bg-opacity-25 rounded-xl flex-1">
           <h1 className="text-3xl font-extrabold">Language Skills</h1>
 
           <p className="text-1xl pt-3">Hindi - Native</p>
