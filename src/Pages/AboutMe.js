@@ -12,6 +12,7 @@ import bootStrapIcon from "../Assests/bootStrap.png";
 import tailwindIcon from "../Assests/tailwind.png";
 import muiIcon from "../Assests/muiLogo.png";
 import envIcon from "../Assests/envLogo.png";
+import { Typewriter } from "react-simple-typewriter";
 
 const AboutMe = () => {
   return (
@@ -21,13 +22,33 @@ const AboutMe = () => {
           ANIKAIT SHAKYA
         </h2>
 
-        <h3 className="text-lg font-bold my-8">Front End Developer</h3>
+        <h3 className="text-lg font-bold my-8">
+          <Typewriter
+            words={[
+              "Hi! I'm a React.js Front-End Wizard.",
+              "Hello! I'm a Creative UI/UX Designer.",
+              "Currently mastering Backend Development Skills.",
+              "Passionate about building interactive web experiences.",
+              "Designing user-friendly interfaces that captivate.",
+              "Exploring the world of backend technologies.",
+            ]}
+            loop={30}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h3>
 
         <p className="text-1xl text-white font-source-code-pro">
-          Proficient React.js engineer with expertise in HTML, CSS, JavaScript,
-          skilled at developing responsive web designs using Bootstrap and
-          TailWind. Eager to contribute knowledge and experience to drive
-          success in React.js development roles.
+          Innovative front-end developer with deep knowledge of React.js, HTML,
+          CSS, and JavaScript. Skilled in designing and implementing responsive
+          web applications with a focus on performance and user experience.
+          Experienced in utilizing Bootstrap and other frameworks to build
+          visually appealing interfaces. Currently enhancing backend development
+          skills to support a full-stack development approach and drive project
+          efficiency.
         </p>
       </div>
 
@@ -35,7 +56,7 @@ const AboutMe = () => {
         <a
           href="https://github.com/AnikaitShakya55"
           target="_blank"
-          rel="noopener noreferrer" 
+          rel="noopener noreferrer"
         >
           <FaGithub className="transition-transform duration-200 hover:scale-125" />
         </a>
