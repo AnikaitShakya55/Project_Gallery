@@ -30,12 +30,11 @@ const videoData = [
 
 const ConceptsLearned = () => {
   return (
-    <div className="flex-col min-h-screen mx-60 mt-20">
-      <h1 className="text-2xl font-bold mb-4">
-        {" "}
-        Tackling Complex Challenges in Company Projects"
+    <div className="flex flex-col items-center justify-center min-h-screen mx-auto mt-20 ">
+      <h1 className="text-2xl font-bold mb-4 text-center">
+        Tackling Complex Challenges in Company Projects
       </h1>
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {videoData.map((video) => (
           <div
             key={video.id}
@@ -49,7 +48,7 @@ const ConceptsLearned = () => {
               allowFullScreen
               title={video.description}
             />
-            <p className="mt-2">{video.description}</p>
+            <p className="mt-2 text-center">{video.description}</p>
           </div>
         ))}
       </div>
