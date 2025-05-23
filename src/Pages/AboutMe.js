@@ -17,13 +17,13 @@ import { Typewriter } from "react-simple-typewriter";
 
 const AboutMe = () => {
   return (
-    <div className="flex-col min-h-screen mx-40 mt-10">
-      <div className="text-center p-10 flex-col">
-        <h2 className="inline-block text-4xl font-rubik py-5 px-9 text-white bg-slate-500 bg-opacity-25 rounded-lg font-semibold md:py-5">
+    <div className="flex-col min-h-screen mx-10 mt-10">
+      <div className="text-center px-3 sm:px-6 py-10 flex flex-col items-center">
+        <h2 className="inline-block text-2xl sm:text-3xl md:text-4xl font-rubik py-4 px-6 sm:px-8 md:px-9 text-white bg-slate-500 bg-opacity-25 rounded-lg font-semibold">
           ANIKAIT SHAKYA
         </h2>
 
-        <h3 className="text-lg font-bold my-8">
+        <h3 className=" w-[100%] h-8  text-base sm:text-lg font-bold my-6 sm:my-8">
           <Typewriter
             words={[
               "Hi! I'm an experienced Full Stack Engineer.",
@@ -43,15 +43,26 @@ const AboutMe = () => {
           />
         </h3>
 
-        <p className="text-1xl text-white font-source-code-pro">
-          Innovative Full Stack developer with deep knowledge of React.js, HTML,
-          CSS, JavaScript, TypeScript and node js. Skilled in designing and
-          implementing responsive web applications with a focus on performance
-          and user experience. Experienced in utilizing Bootstrap and other
-          frameworks to build visually appealing interfaces. Currently enhancing
-          backend development skills to support a full-stack development
-          approach and drive project efficiency.
-        </p>
+        <>
+          {/* Full text for non-mobile screens */}
+          <p className="hidden sm:block text-sm sm:text-base text-white font-source-code-pro leading-loose text-justify max-w-3xl mx-auto px-4 sm:px-2">
+            I'm an innovative Full Stack Developer with expertise in React.js,
+            HTML, CSS, JavaScript, TypeScript, and Node.js. I specialize in
+            building responsive, high-performance web applications with a focus
+            on clean design and exceptional user experience. My experience
+            includes leveraging Bootstrap and modern UI frameworks to create
+            visually engaging interfaces. Currently, I'm sharpening my backend
+            development skills to deliver robust full-stack solutions and drive
+            project success.
+          </p>
+
+          {/* Short summary for mobile screens */}
+          <p className="block sm:hidden text-sm text-white font-source-code-pro leading-relaxed text-justify max-w-3xl mx-auto px-4">
+            I'm a Full Stack Developer skilled in React.js, Node.js, and UI
+            frameworks. Passionate about building clean, responsive apps with
+            great UX.
+          </p>
+        </>
       </div>
 
       <div className="text-5xl flex justify-center gap-16 py-3">
@@ -111,7 +122,7 @@ const AboutMe = () => {
 
       <section className="flex-col bg-slate-500 bg-opacity-25 p-5 my-10 rounded-lg max-w-screen-lg mx-auto">
         <div className="flex justify-center gap-16 mt-5 mb-10">
-          <h1 className="text-6xl font-extrabold">SKILLS</h1>
+          <h1 className="text-5xl font-extrabold">SKILLS</h1>
         </div>
 
         <div className="flex flex-wrap justify-center gap-16">
@@ -172,11 +183,11 @@ const AboutMe = () => {
       </section>
 
       <section className="flex flex-col bg-slate-500 bg-opacity-25 p-8 mb-12 rounded-2xl max-w-5xl mx-auto shadow-lg backdrop-blur-sm">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-white mb-8 tracking-wide">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-8 tracking-wide">
           Technical Skills
         </h1>
 
-        <div className="space-y-6 text-gray-700 text-base sm:text-sm md:text-lg ">
+        <div className="space-y-6 text-gray-700 text-base sm:text-sm md:text-lg">
           <p className="text-sm text-white font-source-code-pro">
             <strong className="text-blue-100">Frontend:</strong> React.js,
             HTML5, CSS3, JavaScript (ES6+), TypeScript
@@ -193,15 +204,21 @@ const AboutMe = () => {
           </p>
 
           <p className="text-sm text-white font-source-code-pro">
-            <strong className="text-blue-100">Language:</strong> Python
+            <strong className="text-blue-100">Backend:</strong> Node.js,
+            Express.js, RESTful APIs, MySQL2, MongoDB, JWT Authentication,
+            Bcrypt, Nodemailer
           </p>
 
           <p className="text-sm text-white font-source-code-pro">
+            <strong className="text-blue-100">Language:</strong> Python
+          </p>
+
+          {/* <p className="text-sm text-white font-source-code-pro">
             <strong className="text-blue-100">Project-specific Skills:</strong>{" "}
             Form Handling, State Persistence, React Hooks, React Router, RESTful
             API Design, Signup and Authentication, Real-Time Database, Custom
             Hooks, Cart Functionality, Firebase (Backend)
-          </p>
+          </p> */}
         </div>
       </section>
     </div>

@@ -12,87 +12,89 @@ import dashImage from "../Assests/dashboard.png";
 const projects = [
   {
     id: 1,
-    title: '"Hichkee" - Online Restaurant Ordering System',
-    link: "https://roastgodshorts.github.io/HichkeeRestaurant/",
-    img: `${restImage}`,
+    title: "ReduxCounterPlus - Redux Counter Functionality",
+    link: "https://anikaitshakya55.github.io/ReduxCounterPlus",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPI55GSJmjNDtnhu8LIF1qqjbbw3vj17d2Bg&s",
   },
   {
     id: 2,
-    title: '"MANVAN" - Online Men Clothing Store',
-    link: "https://roastgodshorts.github.io/MANVAN-ECOMMERCE-WEBSITE",
-    img: `${clothImage}`,
-  },
-  {
-    id: 2,
-    title: '"DashHub" - Searching and Data Visualization Platform ',
-    link: "https://dashboard-app-five-pi.vercel.app",
-    img: `${dashImage}`,
+    title: "MANVAN - Online Men Clothing Store",
+    link: "https://man-van-ecommerce.vercel.app/",
+    img: clothImage,
   },
   {
     id: 3,
-    title: '"Inboxify" - Mailbox Service',
-    link: "https://roastgodshorts.github.io/MAIL-BOX-CLIENT/",
-    img: `${mailImage}`,
+    title: "DashHub - Searching and Data Visualization Platform",
+    link: "https://dashboard-app-five-pi.vercel.app",
+    img: dashImage,
+  },
+  {
+    id: 8,
+    title: "Hichkee - Online Restaurant Ordering System",
+    link: "https://roastgodshorts.github.io/HichkeeRestaurant/",
+    img: restImage,
   },
   {
     id: 4,
-    title: '"ReduxCartify" - Redux Cart Integration',
-    link: "https://anikaitshakya55.github.io/ReduxCartify",
-    img: `${reduxImage}`,
+    title: "Inboxify - Mailbox Service",
+    link: "https://roastgodshorts.github.io/MAIL-BOX-CLIENT/",
+    img: mailImage,
   },
   {
     id: 5,
-    title: '"FilmFetchr" - Retrieve, Display, Add',
-    link: "https://anikaitshakya55.github.io/FilmFetchr/",
-    img: `${filmImage}`,
+    title: "ReduxCartify - Redux Cart Integration",
+    link: "https://anikaitshakya55.github.io/ReduxCartify",
+    img: reduxImage,
   },
   {
     id: 6,
-    title: '"ExpenseTrackify" - Track Expenses Efficiently',
-    link: "https://anikaitshakya55.github.io/ExpenseTrackify/",
-    img: `${trackerImage}`,
+    title: "FilmFetchr - Retrieve, Display, Add",
+    link: "https://anikaitshakya55.github.io/FilmFetchr/",
+    img: filmImage,
   },
   {
     id: 7,
-    title: '"ReduxCounterPlus" - Redux Counter Functionality',
-    link: "https://anikaitshakya55.github.io/ReduxCounterPlus",
-    img: `${counterImage}`,
+    title: "ExpenseTrackify - Track Expenses Efficiently",
+    link: "https://anikaitshakya55.github.io/ExpenseTrackify/",
+    img: trackerImage,
   },
 ];
 
 const ProjectList = () => {
   return (
     <div className={styles.projectList}>
-      <h2 className="text-4xl my-8 font-bold underline">PROJECTS</h2>
-      <ul>
+      <h2 className="text-4xl my-8 font-bold underline text-center">
+        PROJECTS
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {projects.map((project) => (
-          <li
+          <div
             key={project.id}
-            className="  mb-4 border border-gray-300 rounded-lg overflow-hidden hover:text-gray-900"
+            className="border border-gray-300 rounded-lg overflow-hidden hover:text-gray-900"
           >
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col  items-center bg-transparent rounded-lg shadow md:flex-row md:max-w-2xl hover:bg-slate-950 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+              className="flex flex-col h-full items-center bg-transparent rounded-lg shadow hover:bg-slate-950 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
             >
               <img
-                className="object-cover w-full rounded-t-lg h-96 md:h-36 md:w-36 md:rounded-none md:rounded-s-lg"
+                className="object-cover w-full h-48"
                 src={project.img}
                 alt={project.title}
               />
               <div className="flex flex-col justify-between p-4 leading-normal bg-transparent">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                <h5 className="mb-2 text-lg font-bold tracking-tight text-white text-center">
                   {project.title}
                 </h5>
-                <p className="mb-3 font-normal text-white dark:text-gray-400">
+                {/* <p className="mb-3 font-normal text-white dark:text-gray-400 text-center">
                   Click to view the project
-                </p>
+                </p> */}
               </div>
             </a>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
