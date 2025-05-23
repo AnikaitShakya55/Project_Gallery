@@ -64,8 +64,8 @@ const expArr = [
 
 const Experience = () => {
   return (
-    <section className=" bg-slate-500 bg-opacity-25 p-2 md:p-12 my-12 rounded-2xl max-w-7xl mx-auto font-sans text-gray-100 shadow-xl backdrop-blur-md border border-white/20">
-      <header className="text-center mb-14">
+    <section className=" bg-slate-500 bg-opacity-25 p-2 md:p-12 my-12 rounded-2xl max-w-7xl  font-sans text-gray-100 shadow-xl backdrop-blur-md border border-white/20">
+      <header className="text-center mb-5">
         <h1 className="text-4xl font-extrabold tracking-wide text-indigo-300 drop-shadow-md">
           EXPERIENCE
         </h1>

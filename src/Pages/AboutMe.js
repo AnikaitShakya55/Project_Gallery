@@ -3,22 +3,14 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import myImg from "../Assests/akshxar.jpeg";
-import HtmlIcon from "../Assests/html.png";
-import reactIcon from "../Assests/atom.png";
-import cssIcon from "../Assests/css-3.png";
-import javaIcon from "../Assests/js.png";
-import nextIcon from "../Assests/nextjs.png";
-import bootStrapIcon from "../Assests/bootStrap.png";
-import nodeIcon from "../Assests/nodejs.png";
-import tailwindIcon from "../Assests/tailwind.png";
-import muiIcon from "../Assests/muiLogo.png";
-import envIcon from "../Assests/envLogo.png";
 import { Typewriter } from "react-simple-typewriter";
 import Experience from "../Components/About Page Data/ExperienceCard";
+import EducationAndLanguage from "../Components/About Page Data/EducationAndLanguage";
+import SkillsIcon from "../Components/About Page Data/SkillsIcon";
 
 const AboutMe = () => {
   return (
-    <div className="flex-col min-h-screen mx-10 mt-10">
+    <div className="flex flex-col items-center justify-center  min-h-screen  mt-10 px-3 sm:px-6 py-10">
       <div className="text-center px-3 sm:px-6 py-10 flex flex-col items-center">
         <h2 className="inline-block text-2xl sm:text-3xl md:text-4xl font-rubik py-4 px-6 sm:px-8 md:px-9 text-white bg-slate-500 bg-opacity-25 rounded-lg font-semibold">
           ANIKAIT SHAKYA
@@ -58,7 +50,7 @@ const AboutMe = () => {
           </p>
 
           {/* Short summary for mobile screens */}
-          <p className="block sm:hidden text-sm text-white font-source-code-pro leading-relaxed text-justify max-w-3xl mx-auto px-4">
+          <p className="block sm:hidden text-sm text-white font-source-code-pro leading-relaxed max-w-3xl mx-auto px-4">
             I'm a Full Stack Developer skilled in React.js, Node.js, and UI
             frameworks. Passionate about building clean, responsive apps with
             great UX.
@@ -103,94 +95,13 @@ const AboutMe = () => {
       <Experience />
 
       {/* EDUCATION */}
-      <section className="lg:flex h-auto rounded-lg gap-20">
-        <div className="text-left shadow-lg p-10 my-10 bg-slate-500 bg-opacity-25 rounded-xl flex-1">
-          <h1 className="text-3xl font-extrabold">Education</h1>
+      <EducationAndLanguage />
 
-          <p className="text-1xl pt-3">
-            Indian Institute of Technology and Management Jan 2019 - Dec 2022
-          </p>
-
-          <p className="text-1xl pt-3">
-            Sumeet Rahul Goel Memorial Senior Secondary School Jul 2017 - May
-            2018
-          </p>
-        </div>
-
-        <div className="text-left shadow-lg p-10 my-10 bg-slate-500 bg-opacity-25 rounded-xl flex-1">
-          <h1 className="text-3xl font-extrabold">Language Skills</h1>
-
-          <p className="text-1xl pt-3">Hindi - Native</p>
-
-          <p className="text-1xl pt-3">English - Intermediate</p>
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section className="flex-col bg-slate-500 bg-opacity-25 p-5 my-10 rounded-lg max-w-screen-lg mx-auto">
-        <div className="flex justify-center gap-16 mt-5 mb-10">
-          <h1 className="text-5xl font-extrabold">SKILLS</h1>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-16">
-          <img
-            src={HtmlIcon}
-            className="h-8 transition-transform duration-150 hover:scale-75 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="HTML Icon"
-          />
-          <img
-            src={cssIcon}
-            className="h-12 transition-transform duration-150 hover:scale-125 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="CSS Icon"
-          />
-          <img
-            src={javaIcon}
-            className="h-12 transition-transform duration-150 hover:scale-75 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="Java Icon"
-          />
-          <img
-            src={reactIcon}
-            className="h-12 transition-transform duration-150 hover:scale-125 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="React Icon"
-          />
-          <img
-            src={nextIcon}
-            className="h-12 transition-transform duration-150 hover:scale-75 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="Next.js Icon"
-          />
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-16 mt-8">
-          <img
-            src={nodeIcon}
-            className="h-12 transition-transform duration-150 hover:scale-125 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="node Icon"
-          />
-          <img
-            src={bootStrapIcon}
-            className="h-12 transition-transform duration-150 hover:scale-75 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="Bootstrap Icon"
-          />
-          <img
-            src={tailwindIcon}
-            className="h-12 transition-transform duration-150 hover:scale-125 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="Tailwind CSS Icon"
-          />
-          <img
-            src={muiIcon}
-            className="h-12 transition-transform duration-150 hover:scale-75 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="MUI Icon"
-          />
-          <img
-            src={envIcon}
-            className="h-12 transition-transform duration-150 hover:scale-125 sm:h-10 md:h-12 lg:h-14 xl:h-16"
-            alt="Environment Icon"
-          />
-        </div>
-      </section>
+      {/* SKILLS ICON */}
+      <SkillsIcon />
 
       {/* TECHNICAL SKILLS */}
-      <section className="flex flex-col bg-slate-500 bg-opacity-25 p-8 mb-12 rounded-2xl max-w-5xl mx-auto shadow-lg backdrop-blur-sm">
+      <section className="bg-slate-500 bg-opacity-25 p-2 md:p-12 my-12 rounded-2xl w-[95vw] md:w-[70vw] mx-auto font-sans text-gray-100 shadow-xl backdrop-blur-md border border-white/20">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-8 tracking-wide">
           Technical Skills
         </h1>
