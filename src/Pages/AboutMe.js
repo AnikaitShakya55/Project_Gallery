@@ -14,6 +14,7 @@ import tailwindIcon from "../Assests/tailwind.png";
 import muiIcon from "../Assests/muiLogo.png";
 import envIcon from "../Assests/envLogo.png";
 import { Typewriter } from "react-simple-typewriter";
+import Experience from "../Components/About Page Data/ExperienceCard";
 
 const AboutMe = () => {
   return (
@@ -97,6 +98,11 @@ const AboutMe = () => {
         />
       </div>
 
+      {/* EXPERIENCE */}
+
+      <Experience />
+
+      {/* EDUCATION */}
       <section className="lg:flex h-auto rounded-lg gap-20">
         <div className="text-left shadow-lg p-10 my-10 bg-slate-500 bg-opacity-25 rounded-xl flex-1">
           <h1 className="text-3xl font-extrabold">Education</h1>
@@ -120,6 +126,7 @@ const AboutMe = () => {
         </div>
       </section>
 
+      {/* SKILLS */}
       <section className="flex-col bg-slate-500 bg-opacity-25 p-5 my-10 rounded-lg max-w-screen-lg mx-auto">
         <div className="flex justify-center gap-16 mt-5 mb-10">
           <h1 className="text-5xl font-extrabold">SKILLS</h1>
@@ -182,6 +189,7 @@ const AboutMe = () => {
         </div>
       </section>
 
+      {/* TECHNICAL SKILLS */}
       <section className="flex flex-col bg-slate-500 bg-opacity-25 p-8 mb-12 rounded-2xl max-w-5xl mx-auto shadow-lg backdrop-blur-sm">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-white mb-8 tracking-wide">
           Technical Skills

@@ -3,7 +3,6 @@ import styles from "./ProjectList.module.css";
 import restImage from "../Assests/restaurantimage.jpg";
 import clothImage from "../Assests/menImage.jpeg";
 import reduxImage from "../Assests/reduxLogo.png";
-import counterImage from "../Assests/Counter2 logo.png";
 import mailImage from "../Assests/mailBoxlogo.jpg";
 import filmImage from "../Assests/filmFetchr.png";
 import trackerImage from "../Assests/tracker.png";
